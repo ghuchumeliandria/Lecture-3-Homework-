@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <!-- დაბლა გვაქვს სარეგისტრაციო ფორმა ,  სადაც ძირითად  გამოყენებული მაქვს input და label  , 
+     label ზე გაწერილი მაქვს ფერები , ასევე მაქვს radio ინფუთები , რომლებიც გვაძლევს საშუალებას ავირჩიოთ
+     ჩვენი სქესი , ასევე მაქვს submit ღილაკი , რადგან შევსებული ინფორმაცია გადავგზავნო... 
+     ასევე მაქვს მთავარ გვერდზე დასაბრუნებელი ღილაკი -->
+    <div>
+        <form style="background-color: rgb(43, 226, 116); width: 500px; height: auto;">
+
+            <h1 style="color: rgb(133, 13, 224)">
+                სარეგისტრაციო ფორმა
+            </h1>
+
+            <div>
+                <label for="Name" style="color: rgb(133, 13, 224);">სახელი</label>
+                <input type="text"  id="Name" placeholder="სახელი">
+            </div>
+
+            <div>
+                <label for="Lastname" style="color: rgb(133, 13, 224);">გვარი</label>
+                <input type="text"  id="Lastname" placeholder="გვარი">
+            </div>
+
+            <div>
+                <label for="Age" style="color: rgb(133, 13, 224);">ასაკი</label>
+                <input type="number"  id="Age" placeholder="ასაკი">
+            </div>
+
+            <div>
+                <label for="PhoneNumber" style="color: rgb(133, 13, 224);">ტელეფონის ნომერი</label>
+                <input type="number"  id="PhoneNumber" placeholder="+995 599 123 123">
+            </div>
+
+            <div>
+                <label for="Email" style="color: rgb(133, 13, 224);">მეილი</label>
+                <input type="email"  id="Email" placeholder="email@example.com">
+            </div>
+
+            <div>
+                <label for="password" style="color: rgb(133, 13, 224);">პაროლი</label>
+                <input type="password"  id="password" placeholder="პაროლი"  minlength="8">
+            </div>
+
+            <!-- !!!!!!!!!!!!!!!!!! აქ მთავრდება მთავარი input ველები !!!!!!!!!!!!!!!!! -->
+
+            <div>
+                <label for="" style="color: rgb(133, 13, 224);">Gender</label>
+                <label for="Male" style="color: rgb(133, 13, 224);">Male</label>
+                <input type="radio"  id="Male" name="Gender">
+                <label for="Female" style="color: rgb(133, 13, 224);">Female</label>
+                <input type="radio"  id="Female" name="Gender">
+                <label for="Other" style="color: rgb(133, 13, 224);">Other</label>
+                <input type="radio"  id="Other" name="Gender">
+            </div>
+
+            <!--!!!!!!!!!!!!!!!!!!!!!!! აქ უკვე radio input !!!!!!!!!!!!!!!!!!! -->
+
+            <!-- submit ღილაკი -->
+            <input type="submit" style="color: rgb(133, 13, 224);">
+
+        </form>
+
+        <!-- მთავარ გვერდზე გადასასვლელი ლინკი -->
+        <a href="../index.html" style="color: white;">მთავარი გვერდი</a>
+
+    </div>
+</body>
+</html>
